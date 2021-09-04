@@ -1,3 +1,4 @@
-# abhicantdraw
+# Landing page for my webpage 
 
-- Where I talk about what I've learnt in the DS and ML world : https://abhicantdraw.github.io/thoughts-on-data/
+
+- Powered by `jekyll-minimal-theme` from [`henrythemes.github.io/jekyll-minimal-theme` »](http://henrythemes.github.io/jekyll-minimal-theme)
