@@ -7,3 +7,4 @@ Technical Content
    thoughts-on-data/thoughts-on-data
    leetcode/leetcode
    python-tinkerings/python-tinkerings
+   misc/misc

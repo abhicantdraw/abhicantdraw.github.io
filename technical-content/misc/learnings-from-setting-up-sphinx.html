@@ -2,10 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Miscellaneous" href="../misc/misc.html" /><link rel="prev" title="Setting up Python 3.8, Virtualenv and Jupyterlab on Ubuntu 16.04" href="2019-11-07-Setting-Up-Python38-Jupyter-lab.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="prev" title="Miscellaneous" href="misc.html" />
 
     <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
-        <title>Custom CSS extension for Jupyterlab</title>
+        <title>Learnings from Setting up Sphinx</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -175,17 +175,17 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current has-children"><a class="reference internal" href="python-tinkerings.html">Python Tinkerings</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="2019-01-09-F-U-Python-Commands.html">Frequently Used Python Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2019-02-22-Bangpypers-PreWorkshop-Setup.html">Bangpypers Pre-Workshop Setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2019-08-23-Pandas-Notes.html">Pandas Notes - A Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2019-10-31-Git-Jupyterlab-Ext.html">Git extension for Jupyterlab</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2019-11-07-Setting-Up-Python38-Jupyter-lab.html">Setting up Python 3.8, Virtualenv and Jupyterlab on Ubuntu 16.04</a></li>
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Custom CSS extension for Jupyterlab</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../python-tinkerings/python-tinkerings.html">Python Tinkerings</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-01-09-F-U-Python-Commands.html">Frequently Used Python Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-02-22-Bangpypers-PreWorkshop-Setup.html">Bangpypers Pre-Workshop Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-08-23-Pandas-Notes.html">Pandas Notes - A Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-10-31-Git-Jupyterlab-Ext.html">Git extension for Jupyterlab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-11-07-Setting-Up-Python38-Jupyter-lab.html">Setting up Python 3.8, Virtualenv and Jupyterlab on Ubuntu 16.04</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-tinkerings/2019-12-10-Custom-CSS-Jupyterlab-Ext.html">Custom CSS extension for Jupyterlab</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../misc/misc.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../misc/learnings-from-setting-up-sphinx.html">Learnings from Setting up Sphinx</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="misc.html">Miscellaneous</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Learnings from Setting up Sphinx</a></li>
 </ul>
 </li>
 </ul>
@@ -216,85 +216,52 @@
           </label>
         </div>
         <article role="main">
-          <div class="tex2jax_ignore mathjax_ignore section" id="custom-css-extension-for-jupyterlab">
-<h1>Custom CSS extension for Jupyterlab<a class="headerlink" href="#custom-css-extension-for-jupyterlab" title="Permalink to this headline">¶</a></h1>
-<p>Jupyterlab is a definite improvement on the older IPython notebook interface - both in features and in appearance. There is now even an in-built “Dark Theme” that can be enabled.</p>
-<p>But is that all?</p>
-<p>As we know, Jupyterlab is a browser based app and is ipso facto, written on a base of HTML, CSS and Javascript. So if we want to change the appearance over and above what we get out of the box with jupyterlab, we can.
-Now, it <i>is</i> possible to make any CSS changes by hacking into the internals of the notebook, but thanks to a nifty Jupyterlab extension by Adam Wallner, we don’t have to.</p>
-<hr/>
-<p>Check out <a href="https://abhiramr.com/2019-11-07-Setting-Up-Python38-Jupyter-lab/" style="color:blue">Step 4 of my previous post</a> for preliminary installation steps, if you don’t already have Jupyterlab installed.</p>
-<div class="section" id="steps">
-<h2>Steps -<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
-<p>a) Install custom_css</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">jupyter</span> <span class="n">labextension</span> <span class="n">install</span> <span class="nd">@wallneradam</span><span class="o">/</span><span class="n">custom_css</span>
-</pre></div>
-</div>
-<p>b) Run jupyter-lab</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">jupyter</span><span class="o">-</span><span class="n">lab</span>
-</pre></div>
-</div>
-<p><u>In Jupyter-lab</u></p>
-<p>c) Enable the Extensions Manager (experimental)</p>
-<p><img alt="git0" src="../../_images/jupyter_git_0.jpg"/></p>
-<p>d) Navigate to the advanced settings editor</p>
-<p><img alt="git1" src="../../_images/3__01.png"/></p>
-<p>e) Navigate to the custom-css pane and your “User Preferences” section is expected to be largely empty unlike in the populated figure below.</p>
-<p><img alt="git2" src="../../_images/custom_css.png"/></p>
-<p>f) Let me explain the block of code added above in “User Preferences” (sans comments)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">"rules"</span><span class="p">:</span> 
-  <span class="p">[</span>
-    <span class="p">{</span>
-	<span class="s2">"selector"</span><span class="p">:</span> <span class="s2">"#jp-MainLogo"</span><span class="p">,</span>
-	<span class="s2">"styles"</span><span class="p">:</span> 
-    <span class="p">[</span>
-    <span class="s2">"display:block"</span><span class="p">,</span>
-    <span class="s2">"background: url('https://abhiramr.com/img/sharingan.jpeg') no-repeat"</span><span class="p">,</span>
-    <span class="s2">"background-size: contain"</span><span class="p">,</span>
-    <span class="s2">"width: 23px"</span><span class="p">,</span>
-    <span class="s2">"height: 45px"</span><span class="p">,</span>
-    <span class="s2">"padding-left: 0px"</span><span class="p">,</span>
-    <span class="s2">"-moz-box-sizing: border-box"</span><span class="p">,</span>
-    <span class="s2">"box-sizing: border-box"</span>
-    <span class="p">]</span>
-	<span class="p">},</span>
-	<span class="p">{</span>
-    <span class="s2">"selector"</span><span class="p">:</span> <span class="s2">".jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser"</span><span class="p">,</span>
-    <span class="s2">"styles"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"background:#50bd30"</span><span class="p">]</span>
-	<span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>We have a list of <code class="docutils literal notranslate"><span class="pre">rules</span></code> whose members are elements that are to be styled. Each element member is a dictionary, identified by a <code class="docutils literal notranslate"><span class="pre">selector</span></code> that can be a tag, a class or an id (or any selector). Each member also consists of list - <code class="docutils literal notranslate"><span class="pre">style</span></code> in which we list out every custom property we wish to bestow upon the element. If a particular element is identified by multiple ids or classes as is normally the case, they are just all listed in the <code class="docutils literal notranslate"><span class="pre">selector</span></code> separated by spaces.</p>
-<p>In this example, I’ve chosen to modify two elements - (i) the icon on the top left corner of the notebook that is normally the standard Jupyter notebook icon and (ii) The highlighted color that indicates the current active cell in the notebook.</p>
-<p>And now, in classic weight-loss program fashion, here are the before and after pics for each of the changes made.</p>
-</div>
-<div class="section" id="before">
-<h2>Before :<a class="headerlink" href="#before" title="Permalink to this headline">¶</a></h2>
-<p><img alt="git1" src="../../_images/1-pre__01.png"/></p>
-<p><img alt="git1" src="../../_images/2-pre__01.png"/></p>
-<hr/>
-</div>
-<div class="section" id="after">
-<h2>After :<a class="headerlink" href="#after" title="Permalink to this headline">¶</a></h2>
-<p><img alt="git1" src="../../_images/1-post__01.png"/></p>
-<p><img alt="git1" src="../../_images/2-post__01.png"/></p>
-<hr/>
-</div>
-<div class="section" id="finally">
-<h2>Finally -<a class="headerlink" href="#finally" title="Permalink to this headline">¶</a></h2>
-<p><img alt="git1" src="../../_images/final.png"/></p>
-<hr/>
-<p>This is barely the tip of the iceberg. The number of tweaks you can make to your Notebook are limited only by your HTML and CSS savvy!</p>
-</div>
-<div class="section" id="additional-reference-links">
-<h2>Additional reference links -<a class="headerlink" href="#additional-reference-links" title="Permalink to this headline">¶</a></h2>
+          <div class="section" id="learnings-from-setting-up-sphinx">
+<h1>Learnings from Setting up Sphinx<a class="headerlink" href="#learnings-from-setting-up-sphinx" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="properly-for-the-first-time">
+<h2>(properly for the first time)<a class="headerlink" href="#properly-for-the-first-time" title="Permalink to this headline">¶</a></h2>
+<p>This file is to chronicle stuff I learnt from setting up this website and might forget in setting it up again</p>
 <ul class="simple">
-<li><p><a href="https://github.com/wallneradam/jupyterlab-custom-css" style="color:blue">https://github.com/wallneradam/jupyterlab-custom-css</a></p></li>
+<li><p>I set this up on the 20th and 21st of Jan 2022. (10 PM - 4 AM)</p></li>
+<li><p>It all started here - <a class="reference external" href="http://echorand.me/site/notes/articles/sphinx/static_html.html">http://echorand.me/site/notes/articles/sphinx/static_html.html</a></p></li>
+<li><p>Then I learnt how to embed notebooks using NBSphinx <a class="reference external" href="https://stackoverflow.com/questions/38526888/embed-ipython-notebook-in-sphinx-document">https://stackoverflow.com/questions/38526888/embed-ipython-notebook-in-sphinx-document</a>.</p></li>
+<li><p>More about nbsphinx -<a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.2.8/usage.html">https://nbsphinx.readthedocs.io/en/0.2.8/usage.html</a></p></li>
+<li><p>Then I learnt how to add Markdown support using <a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.2.8/usage.html">https://www.sphinx-doc.org/en/master/usage/markdown.html</a></p></li>
+<li><p>I struggled a lot to understand how to use “toc”. Finally figured it out. Made structures for myself.</p>
+<ul>
+<li><p>I dunno enough yet though. Maybe this will help - <a class="reference external" href="https://stackoverflow.com/questions/33486420/adding-files-in-subfolders-to-sphinx-documentation-sphinxcontrib-matlabdomain#51296983">https://stackoverflow.com/questions/33486420/adding-files-in-subfolders-to-sphinx-documentation-sphinxcontrib-matlabdomain#51296983</a></p></li>
 </ul>
-<p></p>
+</li>
+<li><p>Sometimes documents don’t get displayed in the toctree. Check your indentation. <a class="reference external" href="https://stackoverflow.com/questions/62822605/sphinx-modules-rst-warning-document-isnt-included-in-any-toctree">https://stackoverflow.com/questions/62822605/sphinx-modules-rst-warning-document-isnt-included-in-any-toctree</a></p></li>
+<li><p>Understood the configuration - https://www.sphinx-doc.org/en/master/usage/configuration.html</p></li>
+<li><p>Found a bunch of themes and tried them out before zeroing in on Furo. - <a class="reference external" href="https://sphinx-themes.org/sample-sites/furo/">https://sphinx-themes.org/sample-sites/furo/</a></p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<ul class="simple">
+<li><p>Always add these extensions <code class="docutils literal notranslate"><span class="pre">extensions</span> <span class="pre">=</span> <span class="pre">['nbsphinx','myst_parser','IPython.sphinxext.ipython_console_highlighting']</span></code></p></li>
+<li><p>Always exclude these patterns <code class="docutils literal notranslate"><span class="pre">exclude_patterns</span> <span class="pre">=</span> <span class="pre">['_build',</span> <span class="pre">'Thumbs.db',</span> <span class="pre">'.DS_Store','**.ipynb_checkpoints']</span></code></p></li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>Always add a <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> file to the production folder (build) - <a class="reference external" href="https://sphinx-themes.org/sample-sites/furo/">https://www.docslikecode.com/articles/github-pages-python-sphinx/</a></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">html_title</span> <span class="pre">=</span> <span class="pre">""</span></code> if you don’t want the “documentation” string to pop up. - <a class="reference external" href="https://sphinx-themes.org/sample-sites/furo/">https://pradyunsg.me/furo/customisation/sidebar-title/</a></p></li>
+<li><p>Some random warnings : <a class="reference external" href="https://github.com/spatialaudio/nbsphinx/issues/24">https://github.com/spatialaudio/nbsphinx/issues/24</a></p></li>
+<li><p>Some errors : <a class="reference external" href="https://stackoverflow.com/questions/63840334/fix-some-very-minor-issues-and-rebuild-sphinx-but-got-the-error-wrong-color-for">https://stackoverflow.com/questions/63840334/fix-some-very-minor-issues-and-rebuild-sphinx-but-got-the-error-wrong-color-for</a></p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Solved a few Leetcode problems just to have something to write on this site initially. Solved 4 to be precise. Good stuff.</p></li>
+<li><p>Moved around files from <a class="reference external" href="https://abhiramr.com">https://abhiramr.com</a> and an older version of this site.</p></li>
+</ul>
+</div>
+<div class="section" id="misc">
+<h2>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Leetcode is being tracked using <a class="reference external" href="https://seanprashad.com/leetcode-patterns/">https://seanprashad.com/leetcode-patterns/</a> . Took some inspiration from Vinay’s website - <a class="reference external" href="https://stonecharioteer.com/">https://stonecharioteer.com/</a> .</p></li>
+</ul>
 </div>
 </div>
 
@@ -303,23 +270,15 @@ Now, it <i>is</i> possible to make any CSS changes by hacking into the internals
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../misc/misc.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Miscellaneous</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="2019-11-07-Setting-Up-Python38-Jupyter-lab.html">
+          
+          <a class="prev-page" href="misc.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Setting up Python 3.8, Virtualenv and Jupyterlab on Ubuntu 16.04</div>
+                <div class="title">Miscellaneous</div>
                 
               </div>
             </a>
@@ -329,7 +288,7 @@ Now, it <i>is</i> possible to make any CSS changes by hacking into the internals
               Copyright &#169; 2022, Abhiram R |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
-            | <a class="muted-link" href="../../_sources/technical-content/python-tinkerings/2019-12-10-Custom-CSS-Jupyterlab-Ext.md.txt"
+            | <a class="muted-link" href="../../_sources/technical-content/misc/learnings-from-setting-up-sphinx.md.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -349,12 +308,9 @@ Now, it <i>is</i> possible to make any CSS changes by hacking into the internals
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Custom CSS extension for Jupyterlab</a><ul>
-<li><a class="reference internal" href="#steps">Steps -</a></li>
-<li><a class="reference internal" href="#before">Before :</a></li>
-<li><a class="reference internal" href="#after">After :</a></li>
-<li><a class="reference internal" href="#finally">Finally -</a></li>
-<li><a class="reference internal" href="#additional-reference-links">Additional reference links -</a></li>
+<li><a class="reference internal" href="#">Learnings from Setting up Sphinx</a><ul>
+<li><a class="reference internal" href="#properly-for-the-first-time">(properly for the first time)</a></li>
+<li><a class="reference internal" href="#misc">Misc</a></li>
 </ul>
 </li>
 </ul>
