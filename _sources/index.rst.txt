@@ -1,0 +1,28 @@
+.. abhiramr.github.io master file, created by
+   sphinx-quickstart on Thu Jan 20 23:47:40 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+   
+
+
+
+Hi. I'm Abhiram
+==================
+
+I'm a Machine Learning Engineer at O9 Solutions, a supply chain based company in Bangalore. I like coding in Python and R, reading fiction/non-fiction and writing short stories [1]. I also co-created and run Broke Bibliophiles Bangalore [2], a reading community in Bangalore (2017 - present).
+If you'd like to learn new concepts in Python and Data/ML Engineering, subscribe to my newsletter and you'll be notified with each new issue - https://everythingpython.substack.com!
+
+If you'd like to talk about any of the above or just tell me about something in Greek Mythology, mail me!
+
+- [1] https://abhiwrites.com
+- [2] https://brokebibliophilesbangalore.com/about/
+
+
+What's on this site?
+==============================================
+.. toctree::
+   :maxdepth: 2
+
+   technical-content/technical-content

@@ -1,0 +1,10 @@
+Learnings in DS & ML
+---------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   Naive_Bayes_Workshop.ipynb
+   Support_Vector_Machines_Workshop.ipynb
+   learnings-in-spark/learnings-in-spark
+

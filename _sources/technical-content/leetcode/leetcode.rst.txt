@@ -1,0 +1,6 @@
+Leetcode Progress
+=================
+.. toctree::
+   :maxdepth: 1
+
+   day1/day1

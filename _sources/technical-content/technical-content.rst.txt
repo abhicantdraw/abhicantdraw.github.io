@@ -1,0 +1,9 @@
+Technical Content
+------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   thoughts-on-data/thoughts-on-data
+   leetcode/leetcode
+   python-tinkerings/python-tinkerings

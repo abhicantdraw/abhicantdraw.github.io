@@ -1,0 +1,7 @@
+Learnings in Spark
+---------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   2021-12-27-Enabling-Spark-History-Server-Standalone.md
