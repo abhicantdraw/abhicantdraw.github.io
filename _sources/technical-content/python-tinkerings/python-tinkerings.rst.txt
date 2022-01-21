@@ -10,5 +10,6 @@ Python Tinkerings
    2019-10-31-Git-Jupyterlab-Ext.md
    2019-11-07-Setting-Up-Python38-Jupyter-lab.md
    2019-12-10-Custom-CSS-Jupyterlab-Ext.md
+   2018-06-26-Django-Filter-To-Shorten-Naturaltime.md
    
 
