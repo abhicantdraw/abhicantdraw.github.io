@@ -5,5 +5,6 @@ Miscellaneous
    :maxdepth: 1
 
    learnings-from-setting-up-sphinx.md
+   what-I-learnt-FFMpeg.md
    
 

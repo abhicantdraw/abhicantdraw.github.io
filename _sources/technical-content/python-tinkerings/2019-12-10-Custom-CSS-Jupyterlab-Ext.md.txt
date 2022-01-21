@@ -1,4 +1,5 @@
 # Custom CSS extension for Jupyterlab
+<span style="color:blue">Dec 10, 2019</span>
 
 
 Jupyterlab is a definite improvement on the older IPython notebook interface - both in features and in appearance. There is now even an in-built "Dark Theme" that can be enabled. 

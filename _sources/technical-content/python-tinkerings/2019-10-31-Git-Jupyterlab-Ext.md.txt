@@ -1,4 +1,5 @@
 # Git extension for Jupyterlab
+<span style="color:blue">Oct 31, 2019</span>
 
 <i>Disclaimer : Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.</i>
 

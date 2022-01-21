@@ -1,4 +1,5 @@
 # Bangpypers Pre-Workshop Setup
+<span style="color:blue">Feb 22, 2019</span>
 
 <a href="./2019-11-07-Setting-Up-Python38-Jupyter-lab.html" style="color:red">A guide to installing a newer version of Python is available here.</a>
 
