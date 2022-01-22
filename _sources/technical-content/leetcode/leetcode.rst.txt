@@ -6,3 +6,14 @@ Leetcode Progress
    day1/day1
    day2/day2
 
+
+
+==================
+
+This is where I'm going to start putting down solutions to all my leetcode trials, mistakes and all. 
+
+The emojis you see next to each link are indicative of difficulty. 
+
+- 😀 : Easy
+- 🤨 : Medium
+- 😱 : Hard
