@@ -1,0 +1,13 @@
+Day 3 (SQL)
+==========
+
+.. toctree::
+   :maxdepth: 1
+
+   520.ipynb
+
+==========
+
+Back to solving some easy Python problems today.
+
+
