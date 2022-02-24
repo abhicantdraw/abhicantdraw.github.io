@@ -5,3 +5,4 @@ Learnings in Spark
    :maxdepth: 1
 
    2021-12-27-Enabling-Spark-History-Server-Standalone.md
+   2022-02-25-Spark-Commands.md

@@ -2,10 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Enabling the Spark History Server on Spark Standalone" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html" /><link rel="prev" title="Support Vector Machines" href="../Support_Vector_Machines_Workshop.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Machine Learning Interpretability - Part 1" href="../2019-08-16-ML-Interpretability.html" /><link rel="prev" title="Enabling the Spark History Server on Spark Standalone" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html" />
 
     <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
-        <title>Learnings in Spark</title>
+        <title>Spark Commands I can never remember</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
@@ -162,9 +162,9 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../thoughts-on-data.html">Learnings in DS &amp; ML</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../Naive_Bayes_Workshop.html">Using the Naive Bayes Classifier (also supervised)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Support_Vector_Machines_Workshop.html">Support Vector Machines</a></li>
-<li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">Learnings in Spark</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="learnings-in-spark.html">Learnings in Spark</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html">Enabling the Spark History Server on Spark Standalone</a></li>
-<li class="toctree-l4"><a class="reference internal" href="2022-02-25-Spark-Commands.html">Spark Commands I can never remember</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Spark Commands I can never remember</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../2019-08-16-ML-Interpretability.html">Machine Learning Interpretability - Part 1</a></li>
@@ -237,13 +237,14 @@
           </label>
         </div>
         <article role="main">
-          <div class="section" id="learnings-in-spark">
-<h1>Learnings in Spark<a class="headerlink" href="#learnings-in-spark" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html">Enabling the Spark History Server on Spark Standalone</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2022-02-25-Spark-Commands.html">Spark Commands I can never remember</a></li>
+          <div class="tex2jax_ignore mathjax_ignore section" id="spark-commands-i-can-never-remember">
+<h1>Spark Commands I can never remember<a class="headerlink" href="#spark-commands-i-can-never-remember" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>How to create a Spark Dataframe :</p></li>
 </ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Alice'</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">:</span><span class="mi">20</span> <span class="p">},{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Bob'</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">:</span><span class="mi">25</span> <span class="p">}]</span>
+<span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
 </div>
 </div>
 
@@ -252,23 +253,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html">
+          <a class="next-page" href="../2019-08-16-ML-Interpretability.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Enabling the Spark History Server on Spark Standalone</div>
+                <div class="title">Machine Learning Interpretability - Part 1</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../Support_Vector_Machines_Workshop.html">
+          <a class="prev-page" href="2021-12-27-Enabling-Spark-History-Server-Standalone.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Support Vector Machines</div>
+                <div class="title">Enabling the Spark History Server on Spark Standalone</div>
                 
               </div>
             </a>
@@ -278,7 +279,7 @@
               Copyright &#169; 2022, Abhiram R |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
-            | <a class="muted-link" href="../../../_sources/technical-content/thoughts-on-data/learnings-in-spark/learnings-in-spark.rst.txt"
+            | <a class="muted-link" href="../../../_sources/technical-content/thoughts-on-data/learnings-in-spark/2022-02-25-Spark-Commands.md.txt"
                rel="nofollow">
               Show Source
             </a>
