@@ -26,3 +26,10 @@ It did have my restart my system and that took an awful lot of time because I'd 
 - Once that was done, I loaded up the Ubuntu 20.04 ISO and it was smooth sailing from there to install Ubuntu within the Virtual drive. 
 
 ![ffmpeg](./img/finalubu.png)
+
+
+
+
+## Links:
+
+ [https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
