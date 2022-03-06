@@ -1,5 +1,4 @@
-## Learnings from Setting up Sphinx 
-<span style="color:blue">Jan 21, 2022</span>
+## Learnings from Setting up Sphinx   [<span style="color:green">Jan 21, 2022</span>]
 
 
 

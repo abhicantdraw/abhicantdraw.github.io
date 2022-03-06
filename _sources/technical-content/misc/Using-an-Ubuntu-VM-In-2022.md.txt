@@ -1,5 +1,4 @@
-# Setting up and using an Ubuntu VM in 2022
-<span style="color:blue">Mar 6, 2022</span>
+# Setting up and using an Ubuntu VM in 2022   [<span style="color:green">Mar 6, 2022</span>]
 
 I don't remember how I succeeded with these in the past , but for the last 2 years, I've majorly failed at using an Ubuntu ISO on Windows by way of virtual machines. I keep retrying with Oracle's VirtualBox because that's the last memory I have of having succeeded at using an older Ubuntu version's ISO. 
 

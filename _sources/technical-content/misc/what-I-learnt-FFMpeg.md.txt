@@ -1,7 +1,6 @@
-# What I Learnt from 6 hours of tinkering with FFmpeg
-<span style="color:blue">December 6, 2020</span>
+# What I Learnt from 6 hours of tinkering with FFmpeg   [<span style="color:green">December 6, 2020</span>]
 
-### What is FFmpeg?
+## What is FFmpeg?
 
 In their own words, FFmpeg is "A complete, cross-platform solution to record, convert and stream audio and video."
 
@@ -12,7 +11,7 @@ And while it isn't very hard to break into, there are a lot of things that aren'
 
 <span style="color:red">tl;dr -</span> I basically just edited a couple of videos using a CLI tool. No biggie. But the potential it opens up for me by way of not having to ever download an illegal copy of a GUI based tool (don't tell anyone I did this) or be restricted by what they offer doesn't have to be the case anymore :) 
 
-#### My case-study's solution : 
+## My case-study's solution : 
 
 So I've mentioned above about videos recorded for Bangpypers. This particular case today was for editing one such video. 
 
@@ -33,13 +32,13 @@ For now, here's a working set of steps:
 - Stitch video_1_final.mp4 to video_2_final.mp4
 
 ---- 
-#### Usage: 
+### Usage: 
 
 - You should typically have ffmpeg natively installed if you're using a Mac. If you're on Windows/ Linux, you can download the binary at <a href="https://ffmpeg.org/download.html" style="color:blue">https://ffmpeg.org/download.html</a>
 - Once you've downloaded the binary, add it to your path if you're on Windows. If you're on Linux, the installation should typically take care of that for you. 
 - In this post, I'm using a Mac, so I will be directly using FFmpeg as `ffmpeg`.
 
-#### Commands for steps above: 
+### Commands for steps above: 
 
 *Video 1*
 
@@ -66,7 +65,7 @@ For now, here's a working set of steps:
 The net result of this learning can be viewed at our Bangpypers Channel - 
 <a href="https://www.youtube.com/watch?v=xickNijifOs" style="color:blue">https://www.youtube.com/watch?v=xickNijifOs</a>
 
-#### Explanation/ Legend of params used - 
+### Explanation/ Legend of params used - 
 
 - `ss`: Start time as hh:mm:ss
 - `t` : Duration for which to clip
@@ -77,7 +76,7 @@ The net result of this learning can be viewed at our Bangpypers Channel -
 
 ----
 
-#### Chronicled some more of the commands here - 
+### Chronicled some more of the commands here - 
 
 - <a href="https://docs.google.com/document/d/1sax37PO6DMFKCS5iwnl7dboaSnpLRl-YXiY3uyiWhXo/edit?usp=sharing" style="color:blue">https://docs.google.com/document/d/1sax37PO6DMFKCS5iwnl7dboaSnpLRl-YXiY3uyiWhXo/edit?usp=sharing</a>
 
@@ -113,27 +112,3 @@ I hope this helps you if you're looking for help with FFMpeg. Feel free to mail/
 #### About Bangpypers
 
 Bangpypers is one of Bangalore's largest Python User Groups. We conduct Meetups where we have talks and workshops on topics related to Python. Feel free to reach out to mail me in case you want to talk at any of our upcoming sessions. We conduct one every month. More details regarding meetups at <a href="https://www.meetup.com/Bangpypers/" style="color:blue">https://www.meetup.com/Bangpypers/</a>. We're also on <a href="https://twitter.com/__bangpypers__" style="color:blue">Twitter<a>!
-
-
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = abhiramr.github.io/2020-12-06-What-I-Learnt-FFMpeg;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = 2020-12-06-What-I-Learnt-FFMpeg; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://abhiramr.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
